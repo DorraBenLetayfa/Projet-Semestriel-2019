@@ -30,7 +30,7 @@ testResponseDAO.addTestResponse(testResponse);
     }
 
     @Override
-    public void deleteTest(long id) {
+    public void deleteTestResponse(long id) {
 testResponseDAO.deleteTestResponseById(id);
     }
 

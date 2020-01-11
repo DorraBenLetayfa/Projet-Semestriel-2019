@@ -16,14 +16,14 @@ public class TestResponseController {
     private TestResponseService testResponseService;
 
     @PostMapping(value = "/add")
-    public String addUser(@RequestBody TestResponse testResponse) {
+    public String addTestResponse(@RequestBody TestResponse testResponse) {
         testResponseService.addTestResponse(testResponse);
-        return "user  created.";
+        return "test Response  created.";
     }
     @PostMapping(value = "/delete")
-    public String deleteUser(@RequestBody long id) {
-        testResponseService.deleteTest(id);
-        return "user deleted";
+    public String deleteTestResponse(@RequestBody long id) {
+        testResponseService.deleteTestResponse(id);
+        return "test response deleted";
     }
 
     @GetMapping(value = "/all")
