@@ -21,7 +21,7 @@ public class UserController {
         userService.addUser(user);
         return "user  created.";
     }
-    @PostMapping(value = "/add")
+    @PostMapping(value = "/delete")
     public String deleteUser(@RequestBody User user) {
         userService.deleteUser(user);
         return "user deleted";
@@ -31,6 +31,11 @@ public class UserController {
     private List<User> getAllUsers() {
         return userService.getAllUsers();
 
+    }
+    @GetMapping("/auth")
+    public User findUserByUserName(String userName) {
+        User userElem = userService.findClientByUserName(userName);
+        return userElem;
     }
 
 }

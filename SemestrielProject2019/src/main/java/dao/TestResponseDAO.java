@@ -4,7 +4,8 @@ import dao.documents.TestResponse;
 
 import java.util.List;
 
-public interface TestRespponseDAO {
+public interface TestResponseDAO {
     void addTestResponse(TestResponse testResponse);
     List<TestResponse> getAllTestResponse();
+    void deleteTestResponseById(Long id);
 }

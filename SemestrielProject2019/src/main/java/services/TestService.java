@@ -7,6 +7,6 @@ import java.util.List;
 public interface TestService {
     void addTest(Test test);
     List<Test> getAllTests();
-    void deleteTest(Test test);
-    void updateTest(Test test);
+    void deleteTest(long id);
+
 }

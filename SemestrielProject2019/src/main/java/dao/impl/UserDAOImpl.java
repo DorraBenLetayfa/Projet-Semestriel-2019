@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class UserDAOImpl implements UserDAO {
+public class UserDAOImpl implements UserDAO{
     private final UserRepository userRepository;
 
     @Autowired
@@ -31,4 +31,15 @@ public class UserDAOImpl implements UserDAO {
     public void deleteUser(User user) {
         userRepository.delete(user);
     }
+
+    @Override
+    public User findUserByUserName(String userName) {
+        return userRepository.findUserByUserName(userName);
+    }
+
+    @Override
+    public void saveUser(User user) {
+        userRepository.save(user);
+    }
+
 }
