@@ -33,4 +33,14 @@ entrepriseDAO.addEntreprise(entreprise);
     public void deleteEntreprise(long id) {
      entrepriseDAO.deleteEntrepriseById(id);
     }
+
+    @Override
+    public Entreprise findEntrepriseByUserName(String entrepriseName) {
+        return null;
+    }
+
+    @Override
+    public void saveEntreprise(Entreprise entreprise) {
+
+    }
 }

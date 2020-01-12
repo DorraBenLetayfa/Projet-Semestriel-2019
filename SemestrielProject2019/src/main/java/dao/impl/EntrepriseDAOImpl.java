@@ -30,4 +30,14 @@ entrepriseRepository.save(entreprise);
     public void deleteEntrepriseById(Long id) {
 entrepriseRepository.deleteById(id);
     }
+
+    @Override
+    public Entreprise findEntrepriseByUserName(String entrepriseName) {
+        return entrepriseRepository.findEntrepriseByUserName(entrepriseName);
+    }
+
+    @Override
+    public void saveAgent(Entreprise entreprise) {
+entrepriseRepository.save(entreprise);
+    }
 }

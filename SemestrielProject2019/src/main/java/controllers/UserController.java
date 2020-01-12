@@ -34,7 +34,7 @@ public class UserController {
     }
     @GetMapping("/auth")
     public User findUserByUserName(String userName) {
-        User userElem = userService.findClientByUserName(userName);
+        User userElem = userService.findUserByUserName(userName);
         return userElem;
     }
 

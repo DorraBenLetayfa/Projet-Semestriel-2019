@@ -8,4 +8,7 @@ public interface EntrepriseService {
     void addEntreprise(Entreprise entreprise);
     List<Entreprise> getAllEntreprises();
     void deleteEntreprise(long id);
+    Entreprise findEntrepriseByUserName(String entrepriseName);
+    void saveEntreprise(Entreprise entreprise);
+
 }
