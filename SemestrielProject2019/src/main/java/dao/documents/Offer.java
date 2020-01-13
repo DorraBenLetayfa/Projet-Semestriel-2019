@@ -3,7 +3,7 @@ package dao.documents;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import javax.persistence.Id;
+import org.springframework.data.annotation.Id;
 import java.util.Date;
 import java.util.Objects;
 

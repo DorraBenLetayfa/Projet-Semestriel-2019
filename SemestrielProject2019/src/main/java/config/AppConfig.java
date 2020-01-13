@@ -5,6 +5,7 @@ import controllers.*;
 import dao.*;
 import dao.documents.*;
 import dao.repository.*;
+
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -23,3 +24,4 @@ DomainDAO.class,DomainService.class,DomainController.class,ProblemDAO.class,Prob
 StartupDAO.class,StartupService.class,StartupController.class})
 public class AppConfig {
 }
+

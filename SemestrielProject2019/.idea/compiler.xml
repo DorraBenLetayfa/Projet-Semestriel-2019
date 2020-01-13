@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="maven-archiver" target="1.5" />
+      <module name="Maven-Project (1)" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>
